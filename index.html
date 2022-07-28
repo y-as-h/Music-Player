@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Music Player</title>
+        <link rel ="icon " href ="assets/images/itunes.png">
+        <link rel="stylesheet" href="style.css">
+        <script src="data.js" defer></script>
+        <script src="app.js" defer></script>
+    </head>
+
+    <body>
+
+        <audio src="" id="audio-source"></audio>
+
+        <section class="home-section">
+            <div class="carousel">
+                <img src="assets/images/carousel cover 1.jpg" class="active" alt="">
+                <img src="assets/images/carousel cover 2.jpg" alt="">
+                <img src="assets/images/carousel cover 3.jpg" alt="">
+                <img src="assets/images/carousel cover 4.jpg" alt="">
+                <img src="assets/images/carousel cover 5.jpg" alt="">
+            </div>
+
+            <h1 class="heading">Recently played</h1>
+            <div class="playlists-group">
+                <div class="playlist-card">
+                    <img src="assets/images/cover 5.jpg" class="playlist-card-img" alt="">
+                    <p class="playlist-card-name">top international</p>
+                </div>
+                <div class="playlist-card">
+                    <img src="assets/images/cover 1.jpg" class="playlist-card-img" alt="">
+                    <p class="playlist-card-name">best of NCS</p>
+                </div>
+                <div class="playlist-card">
+                    <img src="assets/images/cover 2.jpg" class="playlist-card-img" alt="">
+                    <p class="playlist-card-name">best of Alan Walker</p>
+                </div>
+                <div class="playlist-card">
+                    <img src="assets/images/cover 3.jpg" class="playlist-card-img" alt="">
+                    <p class="playlist-card-name">top 50 - Global</p>
+                </div>
+                <div class="playlist-card">
+                    <img src="assets/images/cover 4.jpg" class="playlist-card-img" alt="">
+                    <p class="playlist-card-name">hard rock</p>
+                </div>
+            </div>
+            <h1 class="heading">based on your listening</h1>
+            <div class="playlists-group">
+                <div class="playlist-card">
+                    <img src="assets/images/cover 3.jpg" class="playlist-card-img" alt="">
+                    <p class="playlist-card-name">top 50 - Global</p>
+                </div>
+                <div class="playlist-card">
+                    <img src="assets/images/cover 2.jpg" class="playlist-card-img" alt="">
+                    <p class="playlist-card-name">best of Alan Walker</p>
+                </div>
+                <div class="playlist-card">
+                    <img src="assets/images/cover 1.jpg" class="playlist-card-img" alt="">
+                    <p class="playlist-card-name">best of NCS</p>
+                </div>
+                <div class="playlist-card">
+                    <img src="assets/images/cover 4.jpg" class="playlist-card-img" alt="">
+                    <p class="playlist-card-name">hard rock</p>
+                </div>
+                <div class="playlist-card">
+                    <img src="assets/images/cover 5.jpg" class="playlist-card-img" alt="">
+                    <p class="playlist-card-name">top international</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="music-player-section">
+
+            <img src="assets/images/back.png" class="back-btn icon hide" alt="">
+            <img src="assets/images/nav.png" class="nav-btn icon hide" alt="">
+
+            <h1 class="current-song-name">song 1</h1>
+            <p class="artist-name hide">artist 1</p>
+
+            <img src="assets/images/cover 1.jpg" class="cover hide" alt="">
+
+            <div class="seek-bar-container">
+                <input type="range" class="music-seek-bar" value="0">
+                <p class="current-time hide">00 : 00</p>
+                <p class="duration hide">00 : 00</p>
+            </div>
+
+            <div class="controls">
+                <span class="fas fa-redo"></span>
+                <div class="main">
+                    <i class="fas fa-backward active"></i>
+                    <i class="fas fa-play active"></i>
+                    <i class="fas fa-pause"></i>
+                    <i class="fas fa-forward active"></i>
+                </div>
+                <input type="range" class="volume-slider" max="1" value="1" step="0.1">
+                <span class="fas fa-volume-up"></span>
+            </div>
+
+        </section>
+
+        <section class="playlist">
+
+            <img src="assets/images/back.png" class="back-btn icon" alt="">
+
+            <h1 class="title">playlist</h1>
+
+            <div class="queue active">
+                <div class="queue-cover">
+                    <img src="assets/images/earth.jpg" alt="">
+                    <i class="fas fa-pause"></i>
+                </div>
+                <p class="name">earth</p>
+            </div>
+            <div class="queue active">
+                <div class="queue-cover">
+                    <img src="assets/images/cradles.jpg" alt="">
+                    <i class="fas fa-pause"></i>
+                </div>
+                <p class="name">cradles</p>
+            </div>
+            <div class="queue active">
+                <div class="queue-cover">
+                    <img src="assets/images/superhero.jpg" alt="">
+                    <i class="fas fa-pause"></i>
+                </div>
+                <p class="name">superhero</p>
+            </div>
+            <div class="queue active">
+                <div class="queue-cover">
+                    <img src="assets/images/dreams.jpg" alt="">
+                    <i class="fas fa-pause"></i>
+                </div>
+                <p class="name">dreams</p>
+            </div>
+            <div class="queue active">
+                <div class="queue-cover">
+                    <img src="assets/images/heroes tonight.jpg" alt="">
+                    <i class="fas fa-pause"></i>
+                </div>
+                <p class="name">heroes tonight</p>
+            </div>
+            <div class="queue active">
+                <div class="queue-cover">
+                    <img src="assets/images/on&on.jpg" alt="">
+                    <i class="fas fa-pause"></i>
+                </div>
+                <p class="name">on & on</p>
+            </div>
+            <div class="queue active">
+                <div class="queue-cover">
+                    <img src="assets/images/invisible.jpg" alt="">
+                    <i class="fas fa-pause"></i>
+                </div>
+                <p class="name">invisible</p>
+            </div>
+            <div class="queue active">
+                <div class="queue-cover">
+                    <img src="assets/images/spirit.jpg" alt="">
+                    <i class="fas fa-pause"></i>
+                </div>
+                <p class="name">spirit</p>
+            </div>
+
+        </section>
+
+
+        <script src="https://kit.fontawesome.com/26504e4a1f.js" crossorigin="anonymous"></script>
+
+    </body>
