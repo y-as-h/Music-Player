@@ -156,19 +156,24 @@ body{
     
     .controls{
         position: relative;
-        width: 80%;
+        width: 90%;
         margin: auto;
         display: flex;
         justify-content: center;
         align-items: center;
         height: 60px;
         font-size: 30px;
+        justify-content: space-between;
     }
     
     .controls span{
-        display: none;
-        opacity: 0;
+        opacity: 0.5;
         transition: 1s;
+    }
+
+    .controls span.active{
+        color: var(--primary-color);
+        opacity: 1;
     }
     
     .music-player-section.active .controls{
